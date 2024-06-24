@@ -7,7 +7,7 @@
 
 .header {
     min-height: 100vh;
-    background: url('../images/portada.jpg') no-repeat;
+    background: url('../images/portada.png') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -33,9 +33,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.1);
+    /* background: rgba(0, 0, 0, 0.1); */
+    background: #2c3e50;
     backdrop-filter: blur(50px);
-
     z-index: -1;
 }
 
@@ -109,7 +109,8 @@
         left: 0;
         width: 100%;
         height: 0;
-        background: rgba(0, 0, 0, 0.1);
+        /* background: rgba(0, 0, 0, 0.1); */
+        background: #2c3e50;
         backdrop-filter: blur(50px);
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
         transition: 0.3s ease;
