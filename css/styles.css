@@ -10,6 +10,7 @@
     background: url('../images/portada.png') no-repeat;
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
 .navbar {
@@ -18,8 +19,6 @@
     left: 0;
     width: 100%;
     padding: 1.3rem 10%;
-    /* background: rgba(0, 0, 0, 0.1); */
-    /* backdrop-filter: blur(50px); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,7 +32,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: rgba(0, 0, 0, 0.1); */
     background: #2c3e50;
     backdrop-filter: blur(50px);
     z-index: -1;
@@ -46,7 +44,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
     transition: 0.5s;
 }
 
@@ -55,7 +53,8 @@
 }
 
 .logo {
-    font-size: 2rem;
+    /* font-size: 3rem; */
+    /* height: 100px; */
     color: #fff;
     text-decoration: none;
     font-weight: 700;
@@ -109,7 +108,6 @@
         left: 0;
         width: 100%;
         height: 0;
-        /* background: rgba(0, 0, 0, 0.1); */
         background: #2c3e50;
         backdrop-filter: blur(50px);
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -136,4 +134,50 @@
         transition-delay: calc(0.15s * var(--i));
         opacity: 1;
     }
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #2c3e50;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content button:hover {
+    background-color: #1a252f;
+}
+
+.info-boxes {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.info-boxes .box {
+    width: 30%;
+    padding: 1rem;
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
 }
