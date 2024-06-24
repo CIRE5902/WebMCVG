@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .header {
@@ -12,6 +12,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
+    overflow: hidden;
 }
 
 .navbar {
